@@ -5,6 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dokumentation</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="popup">
+      <h2>Prøv en tilfældig forestilling</h2>
+      <iframe
+        src="https://pickerwheel.com/emb?choices=KANNIBALEN,DENISOVA 11,COOK BOOK,SOM BRØDRE"
+        width="100%"
+        height="550px"
+        scrolling="no"
+        frameborder="0"
+      ></iframe>
+      <button>GO AWAY</button>
+    </div>
+    <script>
+      let popup = document.querySelector("#popup");
+
+      window.addEventListener("load", function () {
+        setTimeout(function open(event) {
+          document.querySelector("#popup").style.display = "block";
+        }, 2000);
+      });
+
+      document
+        .querySelector("button")
+        .addEventListener("click", () => (popup.style.display = "none"));
+    </script>
+  </body>
 </html>
