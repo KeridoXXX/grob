@@ -1,13 +1,46 @@
+/* fonts */
+@font-face {
+  font-family: "Druk Wide";
+  src: url("DrukWide-Bold.woff2") format("woff2"),
+    url("/fonts/DrukWide-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beausite Classic Regular";
+  src: url("fonts/BeausiteClassicWebTrial-Regular.woff2") format("woff2");
+  src: url("fonts/BeausiteClassicWebTrial-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Beausite Classic Italic";
+  src: url("fonts/BeausiteClassicWebTrial-RegularItalic.woff2") format("woff2");
+  src: url("fonts/BeausiteClassicWebTrial-RegularItalic.woff2") format("woff2");
+}
+
+p {
+  font-family: "Beausite Classic Regular";
+  color: white;
+}
+
+h1 {
+  font-family: "Druk Wide";
+  color: white;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "Druk Wide";
+  color: white;
+  font-size: 6rem;
+}
+
 /* Wheel */
 
 iframe {
   border: none;
-}
-
-h2 {
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding-bottom: 2rem;
 }
 
 button {
@@ -35,3 +68,100 @@ body {
   top: 50%;
   display: none;
 }
+
+/* index 1 (businesscard og h1) */
+
+#index-1 {
+  display: flex;
+}
+
+.flip-container {
+  width: 120%;
+  position: absolute;
+  top: 30%;
+}
+
+.h1-container {
+  width: 48%;
+  padding: 2rem;
+  position: relative;
+}
+
+#index-1 img {
+  width: 700px;
+}
+
+.stack-top {
+  z-index: 1;
+}
+
+.stack-top-2 {
+  z-index: 2;
+}
+
+@media (max-width: 900px) {
+  body {
+    background-color: red;
+  }
+
+  .flip-container {
+  }
+  #index-1 img {
+    width: 400px;
+  }
+  h1 {
+    font-family: "Druk Wide";
+    color: white;
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: purple;
+  }
+
+  .flip-container {
+  }
+  #index-1 img {
+    width: 260px;
+  }
+  h1 {
+    font-family: "Druk Wide";
+    color: white;
+    font-size: 1.6rem;
+  }
+  .h1-container {
+    width: 68%;
+    padding: 2rem;
+    position: relative;
+  }
+
+  .flip-container {
+    width: 120%;
+    position: absolute;
+    top: 20%;
+  }
+}
+
+/* index 2 (punkter og tekst) */
+
+#index-2 {
+  display: flex;
+  padding-top: 8rem;
+  gap: 2rem;
+  flex-direction: row;
+  margin: 2rem;
+}
+
+#index-2 div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#index-2 div h2 {
+}
+
+/* h2 er oppe i fonts */
+
+/* p er oppe i fonts */

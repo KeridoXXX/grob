@@ -4,33 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dokumentation</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style_portfolio.css" />
   </head>
   <body>
-    <div id="popup">
-      <h2>Prøv en tilfældig forestilling</h2>
-      <iframe
-        src="https://pickerwheel.com/emb?choices=KANNIBALEN,DENISOVA 11,COOK BOOK,SOM BRØDRE"
-        width="100%"
-        height="550px"
-        scrolling="no"
-        frameborder="0"
-      ></iframe>
-      <button>GO AWAY</button>
-    </div>
-    <script>
-      let popup = document.querySelector("#popup");
+    <main>
+      <h1>KLUB GROB</h1>
 
-      window.addEventListener("load", function () {
-        setTimeout(function open(event) {
-          document.querySelector("#popup").style.display = "block";
-        }, 2000);
-      });
+      <div>
+        <div class="iframe_container">
+          <iframe
+            src="https://www.youtube.com/embed/rF4LkAXgytg"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
 
-      document
-        .querySelector("button")
-        .addEventListener("click", () => (popup.style.display = "none"));
-    </script>
+      <section id="first_section">
+        <h3>PLANLÆGNINGEN</h3>
+        <div class="section_container">
+          <div class="first_section_pic_01">
+            <img src="images/IMG_2723.JPG" alt="" />
+          </div>
+          <div class="first_section_pic_02">
+            <img src="images/IMG_2724.JPG" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="second_section">
+        <h3>KREA-RUMMET</h3>
+        <div class="section_container">
+          <div class="second_section_pic_01">
+            <img src="images/IMG_2797.JPG" alt="" />
+          </div>
+          <div class="second_section_pic_02">
+            <img src="images/IMG_2798.JPG" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="third_section">
+        <h3>BIOGRAFEN</h3>
+        <div class="section_container">
+          <div class="third_section_pic_01">
+            <img src="images/IMG_0580.jpg" alt="" />
+          </div>
+          <div class="third_section_pic_02">
+            <img src="images/IMG_2820.JPG" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="fourth_section">
+        <h3>MUSEET</h3>
+        <div class="section_container">
+          <div class="fourth_section_pic_01">
+            <img src="images/IMG_2802.JPG" alt="" />
+          </div>
+          <div class="fourth_section_pic_02">
+            <img src="images/IMG_2804.JPG" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section id="fifth_section">
+        <h3>TEATER GROB</h3>
+        <div class="section_container">
+          <div class="fifth_section_pic_01">
+            <img src="images/IMG_0541.jpg" alt="" />
+          </div>
+          <div class="fifth_section_pic_02">
+            <img src="images/IMG_0547.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
