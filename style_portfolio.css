@@ -38,7 +38,9 @@ html {
 }
 
 body {
-  background-color: var(--clr-primaer);
+  /* background-color: var(--clr-primaer); */
+  background-image: url(images/baggrund.png);
+  background-size: 100%;
 }
 
 img {
