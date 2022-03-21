@@ -1,6 +1,8 @@
+/*
 .flip-card {
-  perspective: 3500px;
+  perspective: 4000px;
 }
+*/
 
 .flip-card-inner {
   position: relative;
