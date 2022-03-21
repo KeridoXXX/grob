@@ -10,13 +10,75 @@
   box-sizing: border-box;
 }
 
+/* fonts */
+@font-face {
+  font-family: "Druk Wide";
+  src: url("DrukWide-Bold.woff2") format("woff2"),
+    url("/fonts/DrukWide-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Beausite Classic Regular";
+  src: url("fonts/BeausiteClassicWebTrial-Regular.woff2") format("woff2");
+  src: url("fonts/BeausiteClassicWebTrial-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Beausite Classic Italic";
+  src: url("fonts/BeausiteClassicWebTrial-RegularItalic.woff2") format("woff2");
+  src: url("fonts/BeausiteClassicWebTrial-RegularItalic.woff2") format("woff2");
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 2em;
 }
 
 body {
-  background-color: var(--clr-primaer);
+  /* background-color: var(--clr-primaer); */
+  background-image: url(images/baggrund.png);
+  background-size: 100%;
+}
+
+aside {
+  position: fixed;
+  right: 0;
+  top: 10%;
+}
+
+#menu {
+  opacity: 60%;
+  max-height: 400px;
+}
+#logo {
+  position: absolute;
+  max-height: 40px;
+  top: 20%;
+  right: 30%;
+}
+
+#fb {
+  position: absolute;
+  max-height: 40px;
+  top: 35%;
+  right: 30%;
+}
+
+#insta {
+  position: absolute;
+  max-height: 40px;
+  top: 49%;
+  right: 20%;
+}
+
+#folio {
+  position: absolute;
+  max-height: 35px;
+  top: 64%;
+  right: 15%;
 }
 
 img {
@@ -26,7 +88,8 @@ img {
 }
 
 h1 {
-  font-size: 2rem;
+  font-family: Druk Wide;
+  font-size: 3rem;
   text-align: center;
   color: var(--clr-sekundaer);
   margin-top: 5rem;
@@ -49,6 +112,7 @@ iframe {
 }
 
 h3 {
+  font-family: Druk Wide;
   text-align: center;
   color: #ffdac1;
   margin-top: 1rem;
