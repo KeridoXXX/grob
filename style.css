@@ -125,8 +125,8 @@ h4 {
 /* #index-2 {
   display: flex;
   padding-top: 6rem;
-  margin: 3rem;
-  gap: 3rem;
+  margin: 2rem;
+  gap: 1rem;
 }
 
 #index-2 div {
@@ -157,7 +157,8 @@ h4 {
 
 @media (max-width: 900px) {
   #index-2 {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
