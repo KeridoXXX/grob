@@ -54,5 +54,53 @@
         </p>
       </div>
     </section>
+    <section id="index-3">
+      <div class="wof-container">
+        <div class="arrow">
+          <img src="materiale/Red_Arrow_Left.svg" alt="" />
+        </div>
+        <div class="circle">
+          <img src="materiale/hjul.png" alt="cirkel" />
+        </div>
+      </div>
+      <div class="info-container">
+        <div class="info-img">
+          <img src="materiale/kea Xistens.jpg" alt="Xistens" />
+        </div>
+        <div class="info-txt">
+          <h3>Xistens</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            reiciendis sed pariatur sapiente voluptatem, possimus accusantium
+            laborum, explicabo ut iusto nobis, eum dolorum eos doloremque rerum
+            natus assumenda cum odio inventore optio.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      let wheel = document.querySelector(".circle");
+      let info = document.querySelector(".info-container");
+
+      window.addEventListener("load", start);
+
+      function start() {
+        console.log("siden er loaded");
+        wheel.addEventListener("click", spin);
+        info.classList.add("hide");
+      }
+
+      function spin() {
+        console.log("det virker");
+        wheel.classList.add("spin");
+        wheel.addEventListener("animationend", newThing);
+      }
+
+      function newThing() {
+        console.log("det virker 2");
+        document.querySelector(".wof-container").classList.add("hide");
+        info.classList.remove("hide");
+      }
+    </script>
   </body>
 </html>
