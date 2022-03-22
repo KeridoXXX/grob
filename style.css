@@ -1,8 +1,7 @@
 /* fonts */
 @font-face {
   font-family: "Druk Wide";
-  src: url("https://lehmannen.dk/kea/08_gcdesign/fonts/DrukWide-Bold.woff2")
-      format("woff2"),
+  src: url("fonts/DrukWide-Bold.woff2") format("woff2"),
     url("/fonts/DrukWide-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
@@ -11,15 +10,13 @@
 
 @font-face {
   font-family: "Beausite Classic Regular";
-  src: url("https://lehmannen.dk/kea/08_gcdesign/fonts/BeausiteClassicWebTrial-Regular.woff2")
-    format("woff2");
+  src: url("fonts/BeausiteClassicWebTrial-Regular.woff2") format("woff2");
   src: url("fonts/BeausiteClassicWebTrial-Regular.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Beausite Classic Italic";
-  src: url("https://lehmannen.dk/kea/08_gcdesign/fonts/BeausiteClassicWebTrial-RegularItalic.woff2")
-    format("woff2");
+  src: url("fonts/BeausiteClassicWebTrial-RegularItalic.woff2") format("woff2");
   src: url("fonts/BeausiteClassicWebTrial-RegularItalic.woff2") format("woff2");
 }
 
