@@ -132,15 +132,18 @@ h3 {
   display: flex;
   padding-top: 6rem;
   margin: 2rem;
+  gap: 1rem;
 }
 
 #index-2 div {
   display: flex;
+  gap: 1rem;
 }
 
 @media (max-width: 900px) {
   #index-2 {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
